@@ -86,19 +86,9 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Right: team photo, using the reference theme's own rounded-notch mask shape */}
+          {/* Right: team photo, full image */}
           <div className="animate-fade-in delay-200 relative">
-            <div
-              className="relative aspect-[1504/950]"
-              style={{
-                WebkitMaskImage: "url(/images/hero-mask.png)",
-                maskImage: "url(/images/hero-mask.png)",
-                WebkitMaskSize: "100% 100%",
-                maskSize: "100% 100%",
-                WebkitMaskRepeat: "no-repeat",
-                maskRepeat: "no-repeat",
-              }}
-            >
+            <div className="card-shadow relative aspect-[1504/950] overflow-hidden rounded-2xl">
               <Image
                 src="/images/hero-team.jpg"
                 alt="Quantumedge engineers reviewing a client system together"
